@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #EAEEFA;
+    box-sizing: border-box;
+}
+#barra {
+    height: 55px;
+    background-color: #043392;
+}
+#containerPestanaPago{ /* container de la funcionalidad pago-factura */
+    display: flex;
+    flex-direction: row;
+}
+
+.titulopago {
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+    display: inline;
+}
+
+#barra {
+    padding-top: 5px;
+}
+
+#containerPago {
+    background: #6783BF;
+    height: 330px;
+    width: 390px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 10em;
+    border-radius: 13px;
+}
+
+.linea_pago {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#validarpago {
+    width: 10em;
+    height: 2em;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+#validarpago:hover {
+    background-color: #a9b3e7;
+    box-shadow: 0px 15px 40px rgba(80, 78, 0, 0.15);
+    color: rgb(0, 14, 39);
+}
+
+.pedir::placeholder {
+    text-align: center;
+    color: #1c105c;
+}
+
+.pedir {
+    border-style: none;
+    outline: none;
+    padding-left: 3px;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    height: 25px;
+}
+
+.pedir:focus {
+    outline: #a3a11e solid 2px;
+}
+
+#titulocontainer {
+    text-align: center;
+    color: white;
+}
+
+/*//////////////// estilo factura ///////////// */
+#contenedorFactura{
+    display: none;
+}
+#containerAnimacionFactura{
+    display: none;
+}
+.barras{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+#barraInfo{
+    width: 100%;
+    background: #34a;
+    outline: 2px solid #126;
+    box-shadow: 1px 5px 2px 2px #5698da;
+    z-index: 3;
+    padding-top: 20px; padding-bottom: 5px;
+}
+.barraInfo_info{
+    width: 25%;
+    border-left: 3px dashed #fff;
+    color: #fff;
+}
+
+#barraDescripcion{
+    width: 100%; height: 35vh;
+    padding-top: 5px;
+}
+.barraDescripcion_descripcion{
+    width: 100%; height: 100%;
+    border-style: none; outline: none;
+    resize: none;
+    box-shadow: 1px 3px 2px 2px #8ad;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#barraTotal{
+    width: 100%;
+    height: 50px;
+}
+.barraTotal_total{
+    border-style: none; outline: none;
+    width: 100vw; height: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    border-top: 2px dashed #56a;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#mensajeValorTotal{
+    width: 50%;
+}
+
+#valorTotalProductos{
+    width: 100%;
+}
+
+@keyframes aparecerContainerFactura{
+    from{
+        width: 0; height: 10px;
+        margin-top: 10em; margin-right: 30px;
+    }
+    to{
+        width: 60%; height: 370px; margin-top: 10em; margin-right: 30px;
+        background: #6783BF; border-radius: 12px; box-sizing: content-box;
+    }
+}
+@keyframes aparecerContainerFacturaAnimation{
+    from{
+        width: 100%; height: 10px; box-sizing: border-box;
+    }
+    to{
+        height: 100%; box-sizing: content-box;
+    }
+}

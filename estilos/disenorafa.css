@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#barra {
+    width: 100%; height: 55px;
+    background-color: #043392;
+}
+
+body {
+    background-color: #EAEEFA;
+    box-sizing: border-box;
+}
+h4{ 
+    text-align: center;
+    font-size: xx-large; 
+    color: #043392;
+
+}
+
+#cajas {
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#cajaPrincipal {
+    overflow: auto;
+    width: 58em; height: 80vh;
+    background-color: #ffffff;
+    margin-right: 30px; margin-left: 20px;
+    border-radius: 12px;
+    transition: all 200ms linear;
+    flex-shrink: 100;
+    padding: 10px;
+}
+#containerMesas{
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lineaMesa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mesasTomar{
+    background: #EDFBED;
+    width: 190px; height: 190px;
+    border-radius: 50%; box-sizing: border-box;
+    text-align: center; padding-top: 4.8rem;
+    font-size: xx-large;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.mesasTomar:hover{
+    background: #6ebe6d;
+}
+
+
+.centrarImge{
+    display: flex;
+    justify-content: center;
+    
+}
+#iconEliminar{
+    transition: all 0.3s ease 0s;
+    opacity: 50%;
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+}
+#iconEliminar:hover{
+    opacity: 100%;
+}
+#ladoDerecho {
+    display: flex;
+    flex-direction: column;
+    width: 21em; height: 42em;
+    box-sizing: border-box;
+}
+#cajaSecundaria {
+    transition: all 0.3s ease 0s;
+    width: 18vw; height: 58vh;
+    overflow: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    padding-top: 45px;
+    font-size: 25px;
+}
+/* –––––––––––––––––––––– cuadro de preguntas reservas ––––––––––––––––– */
+#conatinerPreguntasReservas{
+    display: none;
+}
+#btnConfirmar{
+    transition: all 0.3s ease 0s;
+    background-color: hsl(118, 64%, 79%);
+    color: #777777;
+    font-weight: bold;
+    height: 50px;
+    width: 22vw;
+}
+#btnConfirmar:hover{
+    background-color: #6ebe6d;
+    color: #ffffff;
+}
+
+#btnCancelar{
+    transition: all 0.3s ease 0s;
+    background-color: #FFDCD9;
+    color: #777777;
+    font-weight: bold;
+    height: 50px;
+    width: 22vw;
+}
+#btnCancelar:hover{
+    background-color: #f6b5af;
+    color: #ffffff;
+}
+
+#areaReservada{
+    height: 100px;
+    padding-top: 10%;
+    cursor: default;
+}
+.nombrePersonaReservoStayle{
+    height: 40px; margin-top: 30px;
+    font-size: medium; color: #9d9d9d;
+    border-radius: 12px; background: #EAEEFA; border: none;
+}textarea[class="nombrePersonaReservoStayle"]{
+    height: 15em; resize: none; padding: 15px;
+}.nombrePersonaReservoStayle[placeholder]{
+    outline: none; border-style: none; padding: 0.5em 1em 0.5em 1em;
+}.nombrePersonaReservoStayle[placeholder]::placeholder{
+    text-align: center; font-weight: bold;
+}/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+@media (max-width: 1193px){
+    #cajaPrincipal{
+        height: 90vh;
+    }
+    #cajaSecundaria{
+        height: 78vh;
+    }
+}
+@media (max-width: 1193px) {
+    #cajaPrincipal {
+        height: 90vh;
+    }
+    #cajaSecundaria {
+        height: 78vh;
+    }
+}
+
+@media (max-width: 660px) {
+    #cajas {
+        flex-direction: column;
+    }
+    #cajaPrincipal {
+        width: 100%;
+        height: 80vh;
+    }
+    #ladoDerecho {
+        flex-direction: row;
+        width: 100%;
+        height: 35vh;
+        margin-top: 10px;
+    }
+    #cajaSecundaria {
+        width: 68%;
+        height: 35vh;
+        flex-shrink: 100;
+    }
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 0;
+    }
+    #ladoDerecho {
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #cajaSecundaria {
+        width: 100%;
+        height: 80vh;
+    }
+}
+.pedirButton{
+    background: transparent;
+}.pedirButton:hover{
+    background: #aaa;
+}
+
+#containerGeneralPestanaItem{
+    display: none;
+}
+#containerGeneralpestanaPago{
+    display: none;
+}
+#containerGeneralPestanaMesa{
+    cursor: default;
+}

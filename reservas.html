@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Reservation App</title>
+
+    <link rel="stylesheet" href="estilos/disenorafa.css">
+    <link rel="stylesheet" href="estilos/trabajoAaronDaniel.css">
+    <link rel="stylesheet" href="estilos/estiloPago.css">
+</head>
+
+<body id="body">
+    <div id="containerGeneralPestanaMesa">
+        <div id="barra"></div>
+
+        <div id="cajas">
+            <div id="cajaPrincipal">
+                <div id="containerMesas">
+                    <div class="lineaMesa">
+                        <div class="mesasTomar">1</div>
+                        <div class="mesasTomar">2</div>
+                        <div class="mesasTomar">3</div>
+                    </div>
+                    <div class="lineaMesa">
+                        <div class="mesasTomar">4</div>
+                        <div class="mesasTomar">5</div>
+                        <div class="mesasTomar">6</div>
+                    </div>
+                    <div class="lineaMesa">
+                        <div class="mesasTomar">7</div>
+                        <div class="mesasTomar">8</div>
+                        <div class="mesasTomar">9</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ladoDerecho">
+                <div id="cajaSecundaria">
+                    <h4>Reservas</h4>
+                    <div id="conatinerPreguntasReservas">
+                        <input type="text" class="nombrePersonaReservoStayle" placeholder="Ingrese su nombre" />
+                        <textarea class="nombrePersonaReservoStayle" placeholder="Mesas" readonly
+                            id="areaReservada"></textarea>
+
+                    </div>
+                </div>
+                <button class="nombrePersonaReservoStayle" id="btnCancelar">Cancelar</button>
+                <button class="nombrePersonaReservoStayle" id="btnConfirmar">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="containerGeneralPestanaItem">
+        <div id="barra"></div>
+        <div id="cajas">
+            <div id="cajaPrincipal">
+                <div id="scrollproductos">
+                    <div class="productos" id="productouno">
+                        <div class="centrarImge">
+                            <img src="https://i.imgur.com/JwXU8dZ.jpg" alt="pizza">
+                        </div>
+                        <h1>Pizza</h1>
+                        <h1>$40.000</h1>
+                        <input value="1" class="cantidad" type="number" min="1" max="40">
+                        <button class="agregar">Agregar</button>
+                    </div>
+
+                    <div class="productos" id="productodos">
+                        <div class="centrarImge">
+                            <img src="https://i.imgur.com/Fly7mBn.jpg" alt="lasagna">
+                        </div>
+                        <h1>Lasagna</h1>
+                        <h1>$35.000</h1>
+                        <input value="1" class="cantidad" type="number" min="1" max="40">
+                        <button class="agregar">Agregar</button>
+                    </div>
+
+                    <div class="productos" id="productotres">
+                        <div class="centrarImge">
+                            <img src="https://i.imgur.com/ThiFJwQ.jpg" alt="tiramisu">
+                        </div>
+                        <h1>Tiramisù</h1>
+                        <h1>$30.000</h1>
+                        <input value="1" class="cantidad" type="number" min="1" max="40">
+                        <button class="agregar">Agregar</button>
+                    </div>
+
+                    <div class="productos" id="productocuatro">
+                        <div class="centrarImge">
+                            <img src="https://i.imgur.com/XoDCkLl.jpg" alt="pasta">
+                        </div>
+                        <h1>Pasta</h1>
+                        <h1>$36.000</h1>
+                        <input value="1" class="cantidad" type="number" min="1" max="40">
+                        <button class="agregar">Agregar</button>
+                    </div>
+
+                    <div class="productos" id="productocinco">
+                        <div class="centrarImge">
+                            <img src="https://i.imgur.com/dofWDBz.jpg" alt="calzone">
+                        </div>
+                        <h1>Calzone</h1>
+                        <h1>$38.000</h1>
+                        <input value="1" class="cantidad" type="number" min="1" max="40">
+                        <button class="agregar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ladoDerecho">
+                <div id="cajaSecundaria2">
+                    <h4>Productos agregados</h4> <br>
+                </div>
+
+                <div id="botones">
+                    <button id="ordenar">Enviar orden</button>
+                    <button class="buttons" id="boton1">Efectuar pago</button>
+                    <button class="buttons" id="btnEliminar"> <img id="iconEliminar"
+                            src="https://i.imgur.com/t5ety6h.png"> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- parte de la pestana pago -->
+    <div id="containerGeneralpestanaPago">
+        <div id="barra">
+            <h1 class="titulopago">Pagofacil</h1>
+            <label class="titulopago">Pagos seguros y confiables con Rafa, Dani, Aaron y Luis</label>
+        </div>
+
+        <div id="containerPestanaPago">
+            <div id="containerPago">
+                <h1 id="titulocontainer">Informacion de pago</h1>
+                <div class="linea_pago">
+                    <input type="text" class="pedir persona nombre" placeholder="Nombre completo" required>
+                    <input type="email" class="pedir persona" placeholder="E-mail" required>
+                </div>
+                <div class="linea_pago">
+                    <input type="number" class="pedir" placeholder="Numero de tarjeta" min="0" required>
+                    <input type="text" class="pedir" placeholder="Tipo de tarjeta" required>
+                </div>
+                <div class="linea_pago">
+                    <input type="text" class="pedir" placeholder="Valida hasta" required>
+                    <input type="number" class="pedir" placeholder="CVV" min="0" required>
+                </div>
+                <button id="validarpago">Validar datos</button>
+            </div>
+
+            <div id="contenedorFactura">
+                <div id="containerAnimacionFactura">
+                    <div class="barras" id="barraInfo">
+                        <h3 class="barraInfo_info"></h3>
+                        <h3 class="barraInfo_info"></h3>
+                        <h3 class="barraInfo_info"></h3>
+                        <h3 class="barraInfo_info"></h3>
+                    </div>
+                    <div class="barras" id="barraDescripcion">
+                        <textarea class="barraDescripcion_descripcion" readonly="">Producto</textarea>
+                        <textarea class="barraDescripcion_descripcion" readonly="">Cantidad</textarea>
+                        <textarea class="barraDescripcion_descripcion" readonly="">Precio</textarea>
+                    </div>
+                    <div class="barras" id="barraTotal">
+                        <input type="text" class="barraTotal_total" id="mensajeValorTotal">
+                        <input type="text" class="barraTotal_total" id="valorTotalProductos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="funcion/fuente.js" id="cambioSource"></script>
+    <script src="funcion/items.js"></script>
+    <script src="funcion/funcionPago.js"></script>
+</body>
+
+</html>
